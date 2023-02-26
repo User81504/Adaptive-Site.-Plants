@@ -578,7 +578,7 @@ body {
 }
 
 .footer__wrapper__up__flex__element {
-    white-space: nowrap;
+    // white-space: nowrap;
 }
 
 .footer__wrapper__up__flex__element__title {
@@ -592,9 +592,9 @@ body {
 }
 
 .footer__wrapper__up__flex__element__list {
-
+    max-width: 190px;
     ul {}
-
+    
     li {
         font-family: 'Work Sans';
         font-weight: 500;
@@ -619,12 +619,6 @@ body {
     line-height: 28px;
     color: #FFFFFF;
 }
-
-
-
-
-
-
 
 
 
