@@ -128,11 +128,7 @@ body {
     float: right;
 }
 
-@media (max-width: 830px) {
-    .main__details__search {
-        width: 340px;
-    }
-}
+
 
 
 
@@ -186,36 +182,6 @@ body {
 }
 
 
-@media (max-width: 1113px) {
-    .benefits__row__block {
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .benefits__row__block__text {
-        white-space: nowrap;
-        margin: 0;
-    }
-}
-
-@media (max-width: 830px) {
-    .benefits__row {
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-    }
-
-    .benefits__row__block {
-        flex-direction: row;
-        flex-wrap: wrap;
-        max-width: 100px;
-    }
-
-    .benefits__row__block__text {
-        margin: 0;
-    }
-}
 
 
 
@@ -578,7 +544,6 @@ body {
 }
 
 .footer__wrapper__up__flex__element {
-    white-space: nowrap;
 }
 
 .footer__wrapper__up__flex__element__title {
@@ -593,9 +558,11 @@ body {
 
 .footer__wrapper__up__flex__element__list {
 
+    max-width: 190px;
     ul {}
 
     li {
+        
         font-family: 'Work Sans';
         font-weight: 500;
         font-size: 16px;
@@ -630,18 +597,177 @@ body {
 
 // ! MEDIA 
 
+
+.adaptive__delete__arrow {
+    display: none;
+}
+
+
 @media (max-width:1510px) {
     .container {
         max-width: 970px;
     }
+
+    .main__details {
+        margin-top: 170px;
+    }
+
+    .benefits__row__block {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .benefits__row__block__text {
+        white-space: nowrap;
+        margin: 0;
+    }
+
+    .adaptive__delete {
+        display: none;
+    }
+    .products__block {
+        justify-content: space-between;
+    }
+    .products__block__row__card__bg {
+        margin-right: 10px;
+    }
+    .adaptive__delete__arrow {
+        display: flex;
+        align-items: center;
+
+        margin-right: 10px;
+        a {
+        }
+    }
+
+    .care {
+        margin-bottom: 150px;
+    }
+    .care__wrapper__img {
+        display: none;
+    }
+    .care__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__wrapper {
+        padding: 90px 0px;
+    }
+    .footer__wrapper__up {
+        flex-direction: column;
+    }
+    .footer__wrapper__up__email {
+        margin-bottom: 50px;
+    }
+    .footer__wrapper__up__flex__element__title {
+        margin-bottom: 23px;
+    }
+    .footer__wrapper__up__flex__element__list {
+        li {
+            margin-bottom: 12px;
+        }
+    }
+    .footer__wrapper__up__flex__element {
+
+    }
 }
+
+
+
 @media (max-width:992px) {
     .container {
         max-width: 750px;
     }
+
+    .bg-img-wrapper {
+        height: 977px;
+    }
+
+    .header__row__nav {
+        ul {
+            column-gap: 40px;
+        }
+    }
+
+
+    .main__details {
+        margin-top: 140px;
+    }
+    .main__details__subtitle {
+        margin-bottom: 60px;
+    }
+    .main__details__search {
+        width: 340px;
+    }
+    
+    
+    .benefits {
+        margin-top: 150px;
+    }
+    .benefits__row {
+        justify-content: center;
+    }
+
+    .products {
+        margin-top: 315px;
+    }
+    .products__block__row__card__bg {
+        width: 353px;
+    }
+
+    .reference {
+        margin-top: 220px;
+        margin-bottom: 220px;
+    }
+    .reference__section__text__subtitle {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .care__wrapper {
+        flex-direction: column;
+    }
+    .care__wrapper__text__title {
+        text-align: center;
+    }
+    .care__wrapper__text__subtitle {
+        max-width: 300px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .care__wrapper__column__element {
+        margin-bottom: 60px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
 }
+
+
+
 @media (max-width:767px) {
     .container {
         max-width: none;
     }
+
+    .benefits__row {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .benefits__row__block {
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100px;
+    }
+
+    .benefits__row__block__text {
+        margin: 0;
+    }
 }
+
+
+
